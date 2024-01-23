@@ -1,0 +1,11 @@
+block content
+  script(src="/javascripts/login.js")
+  h1 Login
+  form(action="/login.html" method="POST" id="login")
+    label(for="email") Email
+    input(type="email" name="email" id="email" required)
+    label(for="password") Password 
+    input(type="password" name="password" id="password" required)
+    label(for="submit") Login
+    input(type="submit" value="Login") 
+    p(id="errormessage")

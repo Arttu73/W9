@@ -1,0 +1,11 @@
+block content
+  script(src="/javascripts/register.js")
+  h1 Register
+  form(action="/register.html" method="POST", id="register")
+    label(for="email") Email
+    input(type="email" name="email" id="email" required)
+    label(for="password") Password 
+    input(type="password" name="password" id="password" required)
+    label(for="submit") Register
+    input(type="submit" value="register")
+    p(id="errormessage")
